@@ -10,8 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     private lazy var myView: UIView = {
-        let myView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-        myView.image = UIImage(named: "me")
+        let myView = UIImageView(frame: CGRect(x: 0, y: 0, width: 800, height: 1000))
+        myView.image = UIImage(named: "titlenew")
         
         return myView
     }()
@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .gray
+        view.backgroundColor = .white
         
         view.addSubview(myView)
     }
