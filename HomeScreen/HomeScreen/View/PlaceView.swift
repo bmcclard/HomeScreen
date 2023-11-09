@@ -10,7 +10,6 @@ import UIKit
 class PlaceView: UIView {
     private let maxImageSize = 84.0
         
-        // Imageview
          lazy var imageImage: UIImageView = {
             let image = UIImageView(frame: CGRect(x: 0, y: 0, width: maxImageSize, height: maxImageSize))
             image.translatesAutoresizingMaskIntoConstraints = false
@@ -19,7 +18,6 @@ class PlaceView: UIView {
             return image
         }()
         
-        // label
          lazy var stateLabel: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -27,7 +25,6 @@ class PlaceView: UIView {
             return label
         }()
         
-        // label
          lazy var cityLabel: UILabel = {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -43,9 +40,6 @@ class PlaceView: UIView {
         }()
     
     
-        
-        // MARK: Initialization
-        
         override init(frame: CGRect) {
             super.init(frame: frame)
             
@@ -92,7 +86,6 @@ class PlaceView: UIView {
             ])
         }
         
-        // MARK: Public Methods
         
     func setImageImage(imageName: String) {
         imageImage.image = UIImage(named: imageName)?.resize(maxWidthHeight: maxImageSize)
