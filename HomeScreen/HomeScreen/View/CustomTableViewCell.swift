@@ -8,8 +8,8 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-    private let cellHeight = 64.0
-    private let cellWidth = 128.0
+    private let cellHeight = 70.0
+    private let cellWidth = 140.0
     
     lazy var placeView: PlaceView = {
         let placeView = PlaceView(frame: CGRect(x: 0, y: 0, width: cellWidth, height: cellHeight))

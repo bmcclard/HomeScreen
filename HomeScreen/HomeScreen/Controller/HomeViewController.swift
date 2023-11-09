@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     private lazy var myView: UIView = {
-        let myView = UIImageView(frame: CGRect(x: 0, y: 0, width: 800, height: 1000))
+        let myView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 600))
         myView.image = UIImage(named: "titlenew")
         
         return myView
